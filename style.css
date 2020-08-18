@@ -1,0 +1,87 @@
+:root {
+    --primary-color: gray;
+    --page-1-color: rgb(112, 112, 206);
+    --page-2-color: rgb(28, 202, 179);
+    --page-3-color: rgb(230, 205, 123);
+    --page-4-color: rgb(112, 112, 206);
+    --animation: 0.5s;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page1 {
+    height: 100vh;
+    background: var(--page-1-color);
+}
+
+#page2 {
+    height: 100vh;
+    background: var(--page-2-color);
+}
+
+#page3 {
+    height: 100vh;
+    background: var(--page-3-color);
+}
+
+#page4 {
+    height: 100vh;
+    background: var(--page-4-color);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .button {
+    display: flex;
+}
+
+.container .button a {
+    margin: 0 20px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+img {
+    max-height: 900px;
+    max-width: 500px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 130px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px white solid;
+    text-decoration: none;
+    color: black;
+    transition: var(--animation);
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
