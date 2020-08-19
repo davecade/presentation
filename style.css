@@ -5,7 +5,6 @@
     --page-3-color: rgb(230, 205, 123);
     --page-4-color: rgb(112, 112, 206);
     --animation: 0.5s;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -63,8 +62,8 @@ p {
 }
 
 img {
-    max-height: 900px;
-    max-width: 500px;
+    max-height: 800px;
+    max-width: 400px;
 }
 
 .btn {
@@ -85,4 +84,26 @@ img {
 .btn:hover {
     background: #333;
     color: #fff;
+}
+
+#page1 h1 {
+    transform: translateY(-1200px);
+    animation: heading 2s forwards ease-in;
+}
+
+#page1 p {
+    transform: translate(-1500px);
+    animation: text 1s forwards ease-in 2s;
+}
+
+@keyframes heading {
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes text {
+    to {
+        transform: translate(0);
+    }
 }
